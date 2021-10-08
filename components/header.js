@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className="site-container py-6">
       <nav className="space-x-4">
@@ -14,3 +14,5 @@ export const Header = () => {
     </header>
   )
 }
+
+export default Header

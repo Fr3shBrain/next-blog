@@ -16,7 +16,7 @@ function HomePage() {
           </p>
         </div>
       </div>
-      <div className="max-w-4xl mx-auto mt-10">
+      <div className="site-4xl-container mt-20">
         <img src="/js-return.jpg" />
       </div>
     </>
