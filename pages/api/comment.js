@@ -34,6 +34,8 @@ export default async function handler(req, res) {
         picture: user.picture
       }
     }
+    // https://console.upstash.com/redis/392a8175-6950-4e48-a194-89fb2d473c99
+    // https://redis.io/commands/lpush
     // redis connection
     let redis = new Redis(process.env.NEXT_PUBLIC_REDIS_URL)
     // redis write
@@ -46,12 +48,10 @@ export default async function handler(req, res) {
 
   // FETCH
   if (req.method === 'GET') {
+    const { url } = req.query
+
     let redis = new Redis(process.env.NEXT_PUBLIC_REDIS_URL)
-    const comments = await redis.lrange(
-      'http://localhost:3000/blog/long-expected-party',
-      0,
-      -1
-    )
+    const comments = await redis.lrange(url, 0, -1)
     redis.quit()
 
     const data = comments.map((o) => JSON.parse(o))
