@@ -7,12 +7,12 @@ function HomePage() {
             Ben Onur Aylanç. İstanbul'da yaşayan Frontend Developer'ım.
           </h1>
           <p className="">
-            Tasarım araçları, front-end teknolojileri, sokak fotoğrafçılığı ve
-            tipografi gibi konularla yakından ilgileniyorum.
+            Kullanıcı dostu, erişilebilir ve duyarlı web siteleri geliştirmek
+            için bir tutkum var
           </p>
           <p className="">
-            Sektördeki eski teknoloji ve alışkanlıkları yenilerle değiştirmek
-            için youtube kanalımda modern türkçe içerikler üretiyorum.
+            Öğrenmeyi asla bırakmam ve benim için her yeni proje başka bir
+            maceradır.
           </p>
         </div>
       </div>
